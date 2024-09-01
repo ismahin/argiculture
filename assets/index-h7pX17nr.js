@@ -509,7 +509,7 @@ PERFORMANCE OF THIS SOFTWARE.
 `,cD=N.p`
   font-size: 16px;
   color: #777;
-`,dD=[{name:"Dr. Md Shamsul Arefin",role:"Project Lead",image:KC},{name:"Md Ibrahim Shikder Mahin",role:"Data Scientist",image:eD},{name:"Farzana Akter Mily",role:"Ux & UX Designer",image:GC},{name:"Sahadat Hossain Sani",role:"Web Developer (Frontend Focused)",image:JC},{name:"Takiul Islam Sumon",role:"Web Developer (Backend Focused)",image:qC},{name:"Moinul Islam Rehan",role:"Research Analyst",image:XC}],fD=()=>k.jsxs(tD,{children:[k.jsx(rD,{children:"Team Members"}),k.jsx(nD,{children:"Meet Our Team"}),k.jsx(iD,{children:dD.map((e,t)=>k.jsxs(oD,{children:[k.jsx(aD,{children:k.jsx(sD,{src:e.image,alt:e.name})}),k.jsxs(lD,{children:[k.jsx(uD,{children:e.name}),k.jsx(cD,{children:e.role})]})]},t))})]}),hD=N.section`
+`,dD=[{name:"Dr. Md Shamsul Arefin",role:"Project Lead",image:KC},{name:"Md Ibrahim Shikder Mahin",role:"Data Scientist",image:eD},{name:"Farzana Akter Mily",role:"UI & UX Designer",image:GC},{name:"Sahadat Hossain Sani",role:"Web Developer (Frontend Focused)",image:JC},{name:"Takiul Islam Sumon",role:"Web Developer (Backend Focused)",image:qC},{name:"Moinul Islam Rehan",role:"Research Analyst",image:XC}],fD=()=>k.jsxs(tD,{children:[k.jsx(rD,{children:"Team Members"}),k.jsx(nD,{children:"Meet Our Team"}),k.jsx(iD,{children:dD.map((e,t)=>k.jsxs(oD,{children:[k.jsx(aD,{children:k.jsx(sD,{src:e.image,alt:e.name})}),k.jsxs(lD,{children:[k.jsx(uD,{children:e.name}),k.jsx(cD,{children:e.role})]})]},t))})]}),hD=N.section`
   background-color: #27ae60;
   color: white;
   padding: 60px 50px;
