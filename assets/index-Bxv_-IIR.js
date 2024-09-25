@@ -2032,9 +2032,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     padding: 10px 0;
     font-size: 0.85rem;
   }
-`;function vI({post:e}){return C.jsxs(uye,{children:[C.jsx(cye,{children:C.jsx(fye,{src:e.image,alt:e.name})}),C.jsxs(dye,{children:[C.jsx(hye,{children:e.name}),C.jsx(pye,{children:e.description.length>60?e.description.substring(0,60)+"...":e.description}),C.jsxs(mye,{children:["Price: ",e.price," per ",e.unit]})]}),C.jsxs(vye,{children:[C.jsxs(Zy,{onClick:()=>alert("Message functionality coming soon!"),children:[C.jsx(N6,{})," Message"]}),C.jsxs(Zy,{onClick:()=>alert("Added to cart!"),children:[C.jsx(I6,{})," Add to Cart"]}),C.jsxs(Zy,{onClick:()=>alert("Proceeding to buy!"),children:[C.jsx(z6,{})," Buy Now"]})]})]})}const GT=["https://source.unsplash.com/featured/?wheat","https://source.unsplash.com/featured/?corn","https://source.unsplash.com/featured/?rice"],rh=["Wheat","Corn","Rice","Barley","Soybean"],gI=Array.from({length:15},(e,t)=>({id:R_(),image:GT[t%GT.length],name:rh[t%rh.length],description:`High-quality ${rh[t%rh.length]} available for sale.`,contactNumber:"123-456-7890",price:(Math.random()*100).toFixed(2),unit:"kg",isUser:t%5===0})),gye=I.div`
+`;function vI({post:e}){return C.jsxs(uye,{children:[C.jsx(cye,{children:C.jsx(fye,{src:e.image,alt:e.name})}),C.jsxs(dye,{children:[C.jsx(hye,{children:e.name}),C.jsx(pye,{children:e.description.length>60?e.description.substring(0,60)+"...":e.description}),C.jsxs(mye,{children:["Price: ",e.price," per ",e.unit]})]}),C.jsxs(vye,{children:[C.jsxs(Zy,{onClick:()=>alert("Message functionality coming soon!"),children:[C.jsx(N6,{})," Message"]}),C.jsxs(Zy,{onClick:()=>alert("Added to cart!"),children:[C.jsx(I6,{})," Add to Cart"]}),C.jsxs(Zy,{onClick:()=>alert("Proceeding to buy!"),children:[C.jsx(z6,{})," Buy Now"]})]})]})}const gye="/argiculture/assets/wheat-Bc_nOBea.jpg",yye="/argiculture/assets/corn-BiPAnzvV.jpg",xye="/argiculture/assets/rice-w7Immh6L.jpg",_ye="/argiculture/assets/barley-DMbQ4t53.jpg",bye="/argiculture/assets/soybean-CNWA-sGN.jpg",GT=[gye,yye,xye,_ye,bye],rh=["Wheat","Corn","Rice","Barley","Soybean"],gI=Array.from({length:15},(e,t)=>({id:R_(),image:GT[t%GT.length],name:rh[t%rh.length],description:`High-quality ${rh[t%rh.length]} available for sale.`,contactNumber:"123-456-7890",price:(Math.random()*100).toFixed(2),unit:"kg",isUser:t%5===0})),wye=I.div`
   padding: 100px 20px 40px; /* Added top padding */
-`,yye=I.div`
+`,Sye=I.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -2052,20 +2052,20 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   &:hover {
     background-color: ${({theme:e})=>e.colors.primaryDark};
   }
-`,xye=I.div`
+`,Pye=I.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-`;function _ye(){const[e,t]=j.useState(gI),[n,r]=j.useState(!1),i=jb(),o=a=>{t([a,...e])};return j.useEffect(()=>{window.scroll(0,0)},[]),C.jsxs(gye,{children:[C.jsxs(yye,{children:[C.jsx(ZT,{onClick:()=>r(!0),children:"Create Post"}),C.jsx(ZT,{onClick:()=>i("/services/my-posts"),children:"My Posts"})]}),C.jsx(lye,{showModal:n,setShowModal:r,addPost:o}),C.jsx(xye,{children:e.map(a=>C.jsx(vI,{post:a},a.id))})]})}const bye=I.div`
+`;function Oye(){const[e,t]=j.useState(gI),[n,r]=j.useState(!1),i=jb(),o=a=>{t([a,...e])};return j.useEffect(()=>{window.scroll(0,0)},[]),C.jsxs(wye,{children:[C.jsxs(Sye,{children:[C.jsx(ZT,{onClick:()=>r(!0),children:"Create Post"}),C.jsx(ZT,{onClick:()=>i("/services/my-posts"),children:"My Posts"})]}),C.jsx(lye,{showModal:n,setShowModal:r,addPost:o}),C.jsx(Pye,{children:e.map(a=>C.jsx(vI,{post:a},a.id))})]})}const kye=I.div`
   padding: 100px 20px 40px;
-`,wye=I.div`
+`,Cye=I.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-`;function Sye(){const e=gI.filter(t=>t.isUser);return C.jsxs(bye,{children:[C.jsx("h2",{children:"My Posts"}),C.jsx(wye,{children:e.length>0?e.map(t=>C.jsx(vI,{post:t},t.id)):C.jsx("p",{children:"You have not created any posts yet."})})]})}I.main`
+`;function Eye(){const e=gI.filter(t=>t.isUser);return C.jsxs(kye,{children:[C.jsx("h2",{children:"My Posts"}),C.jsx(Cye,{children:e.length>0?e.map(t=>C.jsx(vI,{post:t},t.id)):C.jsx("p",{children:"You have not created any posts yet."})})]})}I.main`
   padding-top: 80px;
 
   @media (max-width: ${({theme:e})=>e.breakpoints.mobile}) {
     padding-top: 100px; /* Adjust if NavBar height increases on mobile */
   }
-`;function Pye(){return C.jsxs(f6,{theme:v6,children:[C.jsx(m6,{}),C.jsxs(l8,{children:[C.jsx(Z6,{}),C.jsxs(e8,{children:[C.jsx(Zn,{path:"/",element:C.jsx(tO,{})}),C.jsx(Zn,{path:"/services/crop-suggestion",element:C.jsx(wW,{})}),C.jsx(Zn,{path:"/services/disease-classification",element:C.jsx(qW,{})}),C.jsx(Zn,{path:"/services/water-resource",element:C.jsx(_U,{})}),C.jsx(Zn,{path:"/services/chatbot",element:C.jsx(_ge,{})}),C.jsx(Zn,{path:"/services/soil-quality-testing",element:C.jsx(uge,{})}),C.jsx(Zn,{path:"/services/marketplace",element:C.jsx(_ye,{})}),C.jsx(Zn,{path:"/services/my-posts",element:C.jsx(Sye,{})}),C.jsx(Zn,{path:"/contact-us",element:C.jsx(Dge,{})}),C.jsx(Zn,{path:"/about-us-detail",element:C.jsx(qge,{})}),C.jsx(Zn,{path:"*",element:C.jsx(tO,{})})]}),C.jsx(c5,{})]})]})}const Oye=Ky.createRoot(document.getElementById("root"));Oye.render(C.jsx(M.StrictMode,{children:C.jsx(Pye,{})}));
+`;function Tye(){return C.jsxs(f6,{theme:v6,children:[C.jsx(m6,{}),C.jsxs(l8,{children:[C.jsx(Z6,{}),C.jsxs(e8,{children:[C.jsx(Zn,{path:"/",element:C.jsx(tO,{})}),C.jsx(Zn,{path:"/services/crop-suggestion",element:C.jsx(wW,{})}),C.jsx(Zn,{path:"/services/disease-classification",element:C.jsx(qW,{})}),C.jsx(Zn,{path:"/services/water-resource",element:C.jsx(_U,{})}),C.jsx(Zn,{path:"/services/chatbot",element:C.jsx(_ge,{})}),C.jsx(Zn,{path:"/services/soil-quality-testing",element:C.jsx(uge,{})}),C.jsx(Zn,{path:"/services/marketplace",element:C.jsx(Oye,{})}),C.jsx(Zn,{path:"/services/my-posts",element:C.jsx(Eye,{})}),C.jsx(Zn,{path:"/contact-us",element:C.jsx(Dge,{})}),C.jsx(Zn,{path:"/about-us-detail",element:C.jsx(qge,{})}),C.jsx(Zn,{path:"*",element:C.jsx(tO,{})})]}),C.jsx(c5,{})]})]})}const Aye=Ky.createRoot(document.getElementById("root"));Aye.render(C.jsx(M.StrictMode,{children:C.jsx(Tye,{})}));
